@@ -1,0 +1,27 @@
+{
+  "name": "kite-myinsights-v2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Medical Account Planning MyInsights module with a local mock preview",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode production && node scripts/postbuild.mjs live",
+    "build:live": "vite build --mode production && node scripts/postbuild.mjs live",
+    "build:training": "vite build --mode training && node scripts/postbuild.mjs training",
+    "preview": "vite preview",
+    "verify:training-data": "node scripts/verify-training-data.mjs"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "^4.0.379",
+    "pptxgenjs": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.21",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}

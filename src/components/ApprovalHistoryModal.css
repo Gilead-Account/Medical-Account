@@ -1,0 +1,95 @@
+.approval-history-overlay {
+    z-index: 1700 !important;
+}
+
+.stakeholder-edit-modal.approval-history-modal {
+    width: min(880px, calc(100vw - 36px));
+}
+
+.approval-history-body {
+    gap: 14px;
+    padding-top: 18px;
+}
+
+.approval-history-summary {
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.approval-history-table-wrap {
+    overflow: auto;
+    border: 1px solid #d9e7ee;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.approval-history-table {
+    width: 100%;
+    min-width: 820px;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.approval-history-table th {
+    padding: 0;
+    color: var(--ink-soft);
+    background: #f7fcfe;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.approval-history-table th .table-sort-button {
+    min-height: 40px;
+    padding: 11px 12px;
+}
+
+.approval-history-table th .table-sort-copy {
+    flex: 0 1 auto;
+}
+
+.approval-history-table th .activity-sort-arrow {
+    transform: translateY(1px);
+}
+
+.approval-history-table td {
+    padding: 13px 12px;
+    border-top: 1px solid #d9edf5;
+    color: var(--ink);
+    vertical-align: middle;
+}
+
+.approval-history-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #b9ddec;
+    border-radius: 6px;
+    color: var(--brand-deep);
+    background: #edf8fc;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.approval-history-message {
+    padding: 34px !important;
+    color: var(--ink-soft) !important;
+    text-align: center;
+}
+
+.approval-history-message.is-error {
+    color: #a12e2e !important;
+}
+
+.approval-history-message button {
+    margin-left: 12px;
+    border: 0;
+    background: transparent;
+    color: var(--brand-deep);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
